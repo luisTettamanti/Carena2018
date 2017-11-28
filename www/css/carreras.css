@@ -113,10 +113,10 @@ body {
 
 @font-face {
     font-family: 'titulo';
-    src: url('../res/fonts/geometr706.ttf') format('truetype');
+    src: url('geometr706.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'subtitulo';
-    src: url('../res/fonts/segoe.ttf') format('truetype');
+    src: url('segoe.ttf') format('truetype');
 }
