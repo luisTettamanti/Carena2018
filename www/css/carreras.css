@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    background-repeat: repeat;
+    background-size: contain;
+    background-image: url("../img/fondoClaro.jpg");    
+}
+
+#wrapper a {
+    text-decoration: none;
+}
+
+#header {
+    z-index: 20; /* El más alto... */
+    position: sticky;
+    display: block;
+    height: 60px;    
+    top: 0px;
+    transition: top 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'subtitulo';
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/*#btnVolver {
+    z-index: 21;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    color: white;
+    left: 20px;
+    top: 10px;
+    background-image: url('../img/Volver.png');
+    background-size: contain;
+}*/
+
+#contenido {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+}
+
+#contenido h4 {
+    line-height: 5px;
+    margin-bottom: 5px;
+}
+
+#imagen {
+    height: 200px;
+    width: auto;
+    background-position: top;
+    background-size: cover;
+}
+
+#titulo {
+    font-family: 'titulo';
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+#footer {
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background-color: lightgray;
+}
+
+#footer p, a {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'subtitulo';    
+    color: white; 
+}
+
+@media screen and (min-width: 480px) {
+    #header, #footer, #contenido {
+        margin-left: 50px;
+        margin-right: 50px;        
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #header, #footer, #contenido {
+        width: 1024px;
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+    
+    #wrapper {
+        width: 1050px;
+        margin: auto;
+    }
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('../res/fonts/geometr706.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'subtitulo';
+    src: url('../res/fonts/segoe.ttf') format('truetype');
+}
