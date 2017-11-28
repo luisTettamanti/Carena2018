@@ -80,6 +80,8 @@ body {
     padding-top: 20px;
     padding-bottom: 35px;
     background-color: lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #footer p {
