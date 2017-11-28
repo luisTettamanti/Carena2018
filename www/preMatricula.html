@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/prematricula.css"/>
+    <!--<link rel="stylesheet" href="css/swiper.min.css">-->
+    <link rel="stylesheet" href="css/swiper.css">    
+    <script src="js/swiper.min.js"></script>
+    
+    <title>Carena2018</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--<a href="index.html"><div id="btnVolver"></div></a>-->
+        <!--<div id="header">Pre-Matrícula 2018</div>-->
+        <div id="header" style="background-color: #5E8937"><!--<div id='informacion'></div>-->Pre-Matrícula 2018</div>
+        <div id="contenido">
+            <div id="slider">
+                 <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="info"><img src="img/premat00.jpg" alt=""></div><div class="ayuda" style='top: 170px;'><b>Desplazando</b> a izquierda y derecha sobre la pantalla, se puede acceder a los pasos necesarios para prematricularse on-line a cualquiera de las propuestas educativas del Instituto.<br><br><b>Presionando</b> en la pantalla puede activarse/desactivarse información adicional (como este mensaje).</div>
+                        </div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat0.jpg" alt=""></div><div class="ayuda" style='top: 350px;'>Primero hay que ingresar a la página del Gobierno de la Provincia de Córdoba: <b>www.cba.gov.ar</b>...</div>
+                        </div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat1.jpg" alt=""></div><div class="ayuda" style='top: 220px;'>En el menú superior, seleccionar la opción <b>REPARTICIONES</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat2.jpg" alt=""></div><div class="ayuda" style='top: 350px;'>Dentro de <b>REPARTICIONES</b>, seleccionar la opción <b>EDUCACIÓN</b>, que nos llevará a la página del Ministerio...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat3.jpg" alt=""></div><div class="ayuda" style='top: 350px;'>Ya en la página del Ministerio de Educación, seleccionar la opción <b>GESTIÓN ESTUDIANTES</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat4.jpg" alt=""></div><div class="ayuda" style='top: 260px;'>Al seleccionar <b>PREMATRICULA NIVEL SUPERIOR</b>, se nos abrirá la página del CIDI (Ciudadano Digital)...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat5.jpg" alt=""></div><div class="ayuda" style='top: 40px;'>Una vez en el CIDI, ingresar utilizando nuestro usuario y contraseña (si aún no los tenemos, ingresar por <b>¿Aún no tiene una cuenta?</b> y crearlos)...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat6.jpg" alt=""></div><div class="ayuda" style='top: 385px;'>En Gestión Estudiantes, acceder al botón <b>Mis Pre-matriculaciones</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat7.jpg" alt=""></div><div class="ayuda" style='top: 340px;'>A continuación, aparecerán nuestros datos y podremos comenzar el proceso desde <b>Nueva Pre-Matriculación</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat75.jpg" alt=""></div><div class="ayuda" style='top: 300px;'>Después, seleccionamos <b>Iniciar por Instituto</b>...</div></div>                     
+                        <div class="swiper-slide"><div class="info"><img src="img/premat8.jpg" alt=""></div><div class="ayuda" style='top: 170px;'>Accedemos al <b>Paso 1: Buscar Instituto</b>, escribiendo <b>carena</b> en <b>nombre instituto</b> y presionando <b>buscar</b>, en el Listado de Institutos nos aparece el Instituto Carena, a continuación presionamos <b>Ver Carreras</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat9.jpg" alt=""></div><div class="ayuda" style='top: 180px;'>En el <b>Paso 2: Seleccionar Carrera</b>, en Carreras del Instituto Seleccionado, seleccionamos la carrera de nuestro agrado y presionamos <b>Pre matriculación</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat10.jpg" alt=""></div><div class="ayuda" style='top: 300px;'>En el <b>Paso 3: Cargar/Actualizar Datos</b>, controlamos nuestros datos personales y seleccionamos <b>Pre-Matriculación Estudiante</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat11.jpg" alt=""></div><div class="ayuda" style='top: 310px;'>Una vez confirmada la pre-matriculación, se nos muestra un mensaje indicando la <b>Operación Exitosa</b>...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat12.jpg" alt=""></div><div class="ayuda" style='top: 310px;'>En el Listado de <b>Mis Pre-Matrículas</b> aparecerá la carrera e instituto seleccionado y en acciones podremos <b>imprimir</b> la Constancia de Prematriculación o borrar la matrícula actual...</div></div>
+                        <div class="swiper-slide"><div class="info"><img src="img/premat13.jpg" alt=""></div><div class="ayuda" style='top: 300px;'>Por último, imprimimos la <b>Constancia de Pre-matriculación</b> y solo nos queda comunicarnos con el Instituto para confirmar fecha y documentación a presentar para completar la matrícula.</div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+             </div>
+        </div>
+        <div id="footer" style="background-color: #5E8937">
+            <p>Instituto Superior<br>
+            <b>Dr. Carlos María Carena</b></p>
+            <a href="https://www.facebook.com/instituto.carena" class="external-link"><div id="linkSocial" style="background-image: url(img/facebook.jpg); background-size: contain"></div></a>
+            <a href="mailto:icarenamclavero@hotmail.com"><div id="linkSocial" style="background-image: url(img/email.png); background-size: contain"></div></a>
+            <a href="tel:+5493544476254"><div id="linkSocial" style="background-image: url(img/phone.jpg); background-size: contain"></div></a>
+        </div>        
+    </div>
+    
+    <script type="text/javascript">
+        
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    }, })
+    
+    function checkInformacion() {
+        var eInfs = document.getElementsByClassName('ayuda');
+        if (eInfs.length >= 1) {
+            for (var i = 0; i < eInfs.length; i++) {
+                var eInf = eInfs[i];
+                var estado = window.getComputedStyle(eInf, null).getPropertyValue('display');
+                if (estado == 'none') {
+                    eInf.style.display = 'block';
+                } else {
+                    eInf.style.display = 'none';
+                }
+            }
+         }
+    }
+
+        var eInfos = document.getElementsByClassName('info');
+        for (var i = 0; i < eInfos.length; i++) {
+            var eInfo = eInfos[i];
+            eInfo.addEventListener('click', checkInformacion, false);
+        }
+    
+    </script>
+   
+</body>
+
+¿</html>
