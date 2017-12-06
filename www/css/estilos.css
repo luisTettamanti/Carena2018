@@ -177,39 +177,62 @@ body {
     border-radius: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     .btnCarrera, .btnPrematricula {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     #header, #footer, #contenido {
-        margin-left: 50px;
-        margin-right: 50px;        
+        margin-left: 0px;
+        margin-right: 0px;        
+    }
+    
+    #footer {
+        margin-left: 10px;
+        margin-right: 10px;          
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 375px) {
     .btnCarrera, .btnPrematricula {
-        min-width: 480px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #header, #footer, #contenido {
+        margin-left: 10px;
+        margin-right: 10px;        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .btnCarrera, .btnPrematricula {
+        min-width: 340px;
         margin-left: 10px;
         margin-right: 10px;
         display: inline-block;
     }
     
-    #header, #footer, #contenido {
-        width: 1024px;
-        margin-left: 10px;
-        margin-right: 10px;
+    #header, #contenido {
+        width: 768px;
+        margin-left: 0px;
+        margin-right: 0px;
     } 
     
+    #footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
     #contenido {
-        padding-left: 20px;
-        padding-right: 20px;
+/*        padding-left: 20px;
+        padding-right: 20px;*/
+        text-align: center;
     }
 
     #wrapper {
-        width: 1050px;
+        width: 768px;
         margin: auto;
     }
 }

@@ -22,35 +22,38 @@ body {
     display: block;
     height: 60px;    
     top: 0px;
-    transition: top 0.3s;
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'subtitulo';
     color: white;
     text-align: center;
-    font-size: 30px;
-    line-height: 60px;
 }
 
-#informacion {
-    z-index: 21;
-    height: 45px;
-    width: 45px;
-    margin-left: 10px;
-    margin-top: 8px;
-    float: left;
-    display: block;
-    background-image: url('../img/infoEnable.svg');
-    background-size: contain;
-    position: absolute;
-    background-color: darkgreen;
-    border-radius: 22px;
+#header h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+#header h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -5px;
+    margin-bottom: 0px;
 }
 
 #slider {
+    width: 100%;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;
+}
+
+.info img {
+    width: 100%;
 }
 
 .ayuda {
@@ -62,13 +65,15 @@ body {
     position: absolute;
     width: calc(100% - 40px);
     max-width: 320px;
-    /*background-color: rgb(255, 255, 179);*/
     background-color: rgba(0,0,0,0.7);
     line-height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+/*    margin-left: 10px;
+    margin-right: 10px;*/
+    margin: auto;
     padding: 10px;
     padding-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
     /*box-shadow: 5px 5px 5px #777777;*/
     border-radius: 10px;
 }
@@ -106,21 +111,19 @@ body {
     font-family: sans-serif;
     padding-left: 10px;
     padding-right: 10px; 
-    padding-bottom: 0px;
 }
 
 #footer {
     z-index: 19;
-    height: 20px;
+    height: 50px;
     margin-left: 0px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    position: absolute;
+    margin-right: 0px;
+    position: sticky;
     bottom: 0;
     display: block;
-    padding-top: 20px;
-    padding-bottom: 35px;
+    padding-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     width: calc(100% - 20px);
 }
 
@@ -129,9 +132,10 @@ body {
     padding: 0px;
     text-align: left;
     text-decoration: none;
-    font-family: 'subtitulo';    
+    font-family: 'subtitulo'; 
     color: white;
-    float: left;  
+    float: left;
+    display: inline-block;
 }
 
 #linkSocial {
@@ -144,10 +148,10 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-    #footer {
-        /*margin-left: 10px;
-        margin-right: 10px;*/
-    }
+    /*#footer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }*/
 }
 
 @media screen and (min-width: 1050px) {
