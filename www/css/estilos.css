@@ -1,14 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 #wrapper {
     margin: 0px;
     padding: 0px;
-    /*background-repeat: repeat;
-    background-size: contain;
-    background-image: url("../img/fondo.jpg");*/
     background-color: black;
 }
 
@@ -23,8 +21,6 @@ body {
     height: 300px;    
     top: 0px;
     transition: top 0.3s;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-bottom: -40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,14 +143,11 @@ body {
 
 #footer {
     height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: calc(100% - 20px);
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     position: relative;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 35px;
+    display: inline-block;
     background-color: transparent;
 }
 
@@ -165,7 +158,15 @@ body {
     text-decoration: none;
     font-family: 'subtitulo';    
     color: white;
-    float: left;
+}
+
+#medios {
+    width: 180px;
+    height: auto;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 #linkSocial {
@@ -183,57 +184,95 @@ body {
         margin-right: 0px;
     }
     
-    #header, #footer, #contenido {
+    #header, #contenido {
         margin-left: 0px;
         margin-right: 0px;        
     }
     
     #footer {
         margin-left: 10px;
-        margin-right: 10px;          
+        margin-right: 10px;
+        height: 80px;
+    }
+    
+    #footer p {
+        top: 50%;
+        transform: translate(0,50%);
+    }
+    
+    #medios {
+        width: 90px;
     }
 }
 
 @media screen and (min-width: 375px) {
-    .btnCarrera, .btnPrematricula {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
     #header, #footer, #contenido {
         margin-left: 10px;
-        margin-right: 10px;        
+        margin-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    
+    #footer {
+        height: 40px;
+    }
+    
+    #footer p {
+        margin-top: -20px;
+        padding-top: 0px;
+    }
+    
+    #medios {
+        width: 180px;
+        padding-top: 20px;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .btnCarrera, .btnPrematricula {
-        min-width: 340px;
-        margin-left: 10px;
-        margin-right: 10px;
+        min-width: 500px;
         display: inline-block;
     }
     
     #header, #contenido {
-        width: 768px;
         margin-left: 0px;
         margin-right: 0px;
     } 
     
+    #header {
+        height: 200px;
+        width: 100%;
+        max-width: 1024px;
+        background-image: url('../img/arcos2.png');
+        background-size: contain;
+        background-position: top;
+        margin-left: auto;
+        margin-right: auto;
+        position: sticky;
+        transition: top 0.3s;
+    }
+    
     #footer {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 1024px;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        display: block;
+        position: fixed;
+        bottom: -10px;
+        height: 50px;
+        background-color: black;
     }
     
     #contenido {
-/*        padding-left: 20px;
-        padding-right: 20px;*/
         text-align: center;
+        height: 100%;
+ 
     }
 
     #wrapper {
-        width: 768px;
         margin: auto;
+        background-color: black;
     }
 }
 
