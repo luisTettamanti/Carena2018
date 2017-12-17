@@ -1,13 +1,13 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: #5D6067;
 }
 
 #wrapper {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: #5D6067;
 }
 
 #wrapper a {
@@ -18,7 +18,7 @@ body {
     z-index: 20; /* El más alto... */
     position: sticky;
     display: block;
-    height: 300px;    
+    height: 200px;    
     top: 0px;
     transition: top 0.3s;
     margin-bottom: -40px;
@@ -29,36 +29,28 @@ body {
     background-color: transparent;
 }
 
-/*#header img {
-    width: 350px;
-    display: block;
-    margin: auto;
-}*/
-
-#header h1 {
-    font-family: sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 8px;
-    text-align: center;
-    padding-top: 195px;
-    color: white;
-}
-
-#header h2 {
-    font-family: "subtitulo";
-    font-size: 20px;
-    line-height: 5px;
-    text-align: center;
-    padding-top: 0px;
-    color: white;
-}
-
 #contenido {
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
     font-family: sans-serif;
+}
+
+#carreras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+#postitulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .titulo {
@@ -73,19 +65,30 @@ body {
     text-align: left;
 }
 
+.btnTitulo {
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
 .btnCarrera {
     height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 1px;
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #C6C3B0;
 }
 
 .btnPrematricula {
     height: 70px;
-    padding-top: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    background-color: transparent;
 }
 
 #imagenBoton {
@@ -95,9 +98,23 @@ body {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
+    float: left;
 }
 
-#textoBoton {
+.textoBotonUno {
+    margin-left: 10px;
+    width: auto;
+    display: block;
+    float: left;
+    text-align: left;
+    padding: 0px;
+    line-height: 50px;
+    font-family: 'titulo';
+    font-size: 25px;
+    color: #F7E9D5; 
+}
+
+.textoDocentes, .textoTecnicos, .textoPrematricula, .textoPostitulos, .textoTitulo {
     margin-left: 10px;
     width: auto;
     height: 50px;
@@ -105,53 +122,60 @@ body {
     text-align: left;
 }
 
-#textoBoton h1 {
+.textoDocentes {
+    color: #087882;    
+}
+
+.textoTecnicos {
+    color: #563773;    
+}
+
+.textoPrematricula {
+    color: #F7E9D5;
+}
+
+.textoPostitulos {
+    color: #9A2F52;
+}
+
+.textoTitulo {
+    color: #F7E9D5;
+}
+
+.textoDocentes h1, .textoTecnicos h1, .textoPrematricula h1, .textoPostitulos h1, .textoTitulo h1 {
     margin: 0px;
     padding: 0px;
     line-height: 30px;
     font-family: 'titulo';
-    font-size: 28px;
-    color: white;    
+    font-size: 25px;
 }
 
-#textoBoton h2 {
+.textoDocentes h2 , .textoTecnicos h2, .textoPrematricula h2, .textoPostitulos h2, .textoTitulo h2 {
     margin: 0px;
     padding: 0px;
     line-height: 20px;
     font-family: 'subtitulo';
     font-size: 20px;
-    color: white;
 }
 
-.btnCarrera h1, .btnPrematricula h1 {
-    margin: 0px;
-    padding: 0px;
-    line-height: 30px;
-    font-family: 'titulo';
-    font-size: 30px;
-    color: white;
+.opciones {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-image: url(../img/fondoClaro2.jpg);
 }
 
-.btnCarrera h2, .btnPrematricula h2 {
-    margin: 0px;
-    padding: 0px;
-    line-height: 20px;
-    font-family: 'subtitulo';
-    font-size: 20px;
-    color: white;
-}
-
-#footer {
-    height: 20px;
+.footer {
     width: calc(100% - 20px);
     margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
+    margin-bottom: 0px;
     display: inline-block;
     background-color: transparent;
+    position: fixed;
+    bottom: 10px;
 }
 
-#footer p {
+.footer p {
     margin: 0px;
     padding: 0px;
     text-align: left;
@@ -189,13 +213,13 @@ body {
         margin-right: 0px;        
     }
     
-    #footer {
+    .footer {
         margin-left: 10px;
         margin-right: 10px;
         height: 80px;
     }
     
-    #footer p {
+    .footer p {
         top: 50%;
         transform: translate(0,50%);
     }
@@ -206,25 +230,28 @@ body {
 }
 
 @media screen and (min-width: 375px) {
-    #header, #footer, #contenido {
+    #header, .footer, #contenido {
         margin-left: 10px;
         margin-right: 10px;
         padding-top: 20px;
         padding-bottom: 0px;
     }
     
-    #footer {
+    .footer {
         height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
-    #footer p {
+    .footer p {
         margin-top: -20px;
         padding-top: 0px;
     }
     
     #medios {
         width: 180px;
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -252,7 +279,7 @@ body {
         transition: top 0.3s;
     }
     
-    #footer {
+    .footer {
         width: 1024px;
         margin-top: 20px;
         margin-left: 50%;

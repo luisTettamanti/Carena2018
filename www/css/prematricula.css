@@ -1,13 +1,13 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #5E8937;
+    background-color: #5D6067;
 }
 
 #wrapper {
     margin: 0px;
     padding: 0px;
-    background-color: #5E8937;
+    background-color: #5D6067;
 }
 
 #wrapper a {
@@ -112,6 +112,7 @@ body {
     display: block;
     width: calc(100% - 20px);
     padding: 10px;
+    background-color: #5D6067;
 }
 
 #footer p {

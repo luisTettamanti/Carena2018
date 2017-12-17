@@ -1,14 +1,15 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-image: url("../img/fondoClaro2.jpg"); 
 }
 
 #wrapper {
     margin: 0px;
     padding: 0px;
     background-repeat: repeat;
-    background-size: contain;
-    background-image: url("../img/fondoClaro.jpg");    
+    background-size: auto;
+  
 }
 
 #wrapper a {
@@ -21,7 +22,6 @@ body {
     display: block;
     height: 60px;    
     top: 0px;
-    transition: top 0.3s;
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'subtitulo';
@@ -30,18 +30,6 @@ body {
     font-size: 30px;
     line-height: 60px;
 }
-
-/*#btnVolver {
-    z-index: 21;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    color: white;
-    left: 20px;
-    top: 10px;
-    background-image: url('../img/Volver.png');
-    background-size: contain;
-}*/
 
 #contenido {
     position: relative;
@@ -101,6 +89,40 @@ body {
     margin-left: 5px;
     background-color: cornflowerblue;
     border-radius: 20px;
+}
+
+#footerPostitulos {
+    background-color: #9A2F52;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 70px;
+}
+
+#logoCarena {
+    background-color: #9A2F52;
+    background-image: url("../img/CarenaFooter.png");
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    width: calc(50% - 20px);
+    height: 50px; 
+    margin-top: 10px;
+    float: left;
+    padding-left: 20px;
+}
+
+#logoISEP {
+    background-color: #9A2F52;
+    background-image: url("../img/ISEPFooter.png");
+    background-size: contain;
+    background-origin: content-box;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: calc(50% - 20px);
+    height: 50px; 
+    margin-top: 10px;
+    float: left;
+    padding-right: 20px;
 }
 
 @media screen and (min-width: 480px) {
